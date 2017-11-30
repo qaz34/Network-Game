@@ -1,0 +1,25 @@
+#pragma once
+#include "MessageIdentifiers.h"
+#include <RakPeerInterface.h>
+#include <BitStream.h>
+#include <Chrono>
+#include <thread>
+enum GameMessages
+{
+	ID_SERVER_TEXT_MESSAGE = ID_USER_PACKET_ENUM + 1,
+	ID_SERVER_SET_CLIENT_ID,
+	ID_CLIENT_CLIENT_MOUSEPOS,
+	ID_CLIENT_CLIENT_GAMEOBJECT,
+	ID_CLIENT_MOUSECLICK,
+	ID_BULLET_MADE,
+	ID_BULLET_HIT,
+	ID_BULLET_OUT,
+	ID_RESET,
+	ID_RMBDOWN,
+	ID_RMBUP,
+	ID_DISCONECT,
+	ID_SENDHEIGHTBEINGUSED,
+	ID_SCORES,
+	ID_SETGAMEOBJECTS,
+	ID_LUASCRIPT
+};
